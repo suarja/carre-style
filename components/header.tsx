@@ -46,7 +46,6 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <NavLink href="/">Accueil</NavLink>
           <NavLink href="/beton-imprime">Béton Imprimé</NavLink>
           <NavLink href="/carrelage">Carrelage</NavLink>
           <NavLink href="/contact">Contact</NavLink>
@@ -58,7 +57,6 @@ export default function Header() {
             isScrolled ? "shadow-md" : "shadow-lg shadow-cs-orange/20"
           }`}
         >
-          <Square className="mr-2" size={12} />
           Devis Gratuit
         </Link>
 
