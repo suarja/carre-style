@@ -5,10 +5,18 @@ import type React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Square } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathName = usePathname();
+  console.log(pathName);
+
+  function isPathActive(path: string) {
+    return pathName === path;
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,9 +54,18 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <NavLink href="/beton-imprime">Béton Imprimé</NavLink>
-          <NavLink href="/carrelage">Carrelage</NavLink>
-          <NavLink href="/contact">Contact</NavLink>
+          <NavLink
+            isActive={isPathActive("/beton-imprime")}
+            href="/beton-imprime"
+          >
+            Béton Imprimé
+          </NavLink>
+          <NavLink isActive={isPathActive("/carrelage")} href="/carrelage">
+            Carrelage
+          </NavLink>
+          <NavLink isActive={isPathActive("/contact")} href="/contact">
+            Contact
+          </NavLink>
         </nav>
 
         <Link
@@ -78,18 +95,24 @@ export default function Header() {
               Accueil
             </MobileNavLink>
             <MobileNavLink
+              isActive={isPathActive("/beton-imprime")}
               href="/beton-imprime"
               onClick={() => setIsMenuOpen(false)}
             >
               Béton Imprimé
             </MobileNavLink>
             <MobileNavLink
+              isActive={isPathActive("/carrelage")}
               href="/carrelage"
               onClick={() => setIsMenuOpen(false)}
             >
               Carrelage
             </MobileNavLink>
-            <MobileNavLink href="/contact" onClick={() => setIsMenuOpen(false)}>
+            <MobileNavLink
+              isActive={isPathActive("/contact")}
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Contact
             </MobileNavLink>
             <Link
@@ -97,7 +120,6 @@ export default function Header() {
               className="btn btn-primary w-full text-center mt-2 flex items-center justify-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              <Square className="mr-2" size={12} />
               Devis Gratuit
             </Link>
           </nav>
@@ -110,17 +132,28 @@ export default function Header() {
 function NavLink({
   href,
   children,
+  isActive,
 }: {
   href: string;
   children: React.ReactNode;
+  isActive?: boolean;
 }) {
   return (
     <Link
       href={href}
-      className="text-white hover:text-cs-orange font-medium relative group"
+      className={cn(
+        "text-white hover:text-cs-orange font-medium relative group",
+        {
+          "text-cs-orange": isActive,
+        }
+      )}
     >
       {children}
-      <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cs-orange group-hover:w-full transition-all duration-300"></div>
+      <div
+        className={cn(
+          "absolute -bottom-1 left-0 w-0 h-0.5 bg-cs-orange group-hover:w-full transition-all duration-300"
+        )}
+      ></div>
     </Link>
   );
 }
@@ -129,15 +162,22 @@ function MobileNavLink({
   href,
   onClick,
   children,
+  isActive,
 }: {
   href: string;
   onClick: () => void;
   children: React.ReactNode;
+  isActive?: boolean;
 }) {
   return (
     <Link
       href={href}
-      className="text-white hover:text-cs-orange font-medium flex items-center"
+      className={cn(
+        "text-white hover:text-cs-orange font-medium flex items-center",
+        {
+          "text-cs-orange": isActive,
+        }
+      )}
       onClick={onClick}
     >
       <Square className="mr-2 text-cs-orange" size={8} />
