@@ -51,7 +51,7 @@ export default function Home() {
               <ServiceCard
                 title="Béton Imprimé"
                 description="Transformez vos espaces extérieurs avec notre béton imprimé durable et esthétique. Idéal pour les terrasses, allées et sols extérieurs."
-                imagePath="/images/beton-imprime-terrasse.png"
+                imagePath="/images/beton-imprime-piscine.png"
                 link="/beton-imprime"
               />
             </div>
@@ -59,7 +59,7 @@ export default function Home() {
               <ServiceCard
                 title="Carrelage"
                 description="Donnez du caractère à vos espaces intérieurs avec notre service de pose de carrelage professionnel pour salles de bain, cuisines et sols."
-                imagePath="/images/carrelage-salle-de-bain.png"
+                imagePath="/images/carrelage-sdb-moderne.png"
                 link="/carrelage"
               />
             </div>
