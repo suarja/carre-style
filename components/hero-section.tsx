@@ -32,6 +32,7 @@ export default function HeroSection({
           priority
           className="object-cover"
           sizes="100vw"
+          
         />
         <div className={bgImageClass} />
       </div>

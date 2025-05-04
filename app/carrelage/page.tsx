@@ -134,12 +134,15 @@ export default function Carrelage() {
 
   const galleryImages = [
     {
-      src: "/images/carrelage-salle-de-bain.png",
+      src: "/images/carrelage-cheminee.png",
+      alt: "Carrelage de cheminée",
+    },
+    {
+      src: "/images/carrelage-sdb-cafe.jpg",
       alt: "Carrelage de salle de bain",
     },
-    { src: "/images/carrelage-cuisine.png", alt: "Carrelage de cuisine" },
     {
-      src: "/images/carrelage-sdb-moderne.png",
+      src: "/images/carrelage-sdb-marbre-or.jpg",
       alt: "Salle de bain moderne avec douche à l'italienne",
     },
     {
@@ -210,7 +213,7 @@ export default function Carrelage() {
             </div>
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden order-1 md:order-2 border border-gray-800 shadow-lg transform transition-transform duration-500 hover:scale-[1.02]">
               <Image
-                src="/images/carrelage-salle-de-bain.png"
+                src="/images/carrelage-mur-xxl.png"
                 alt="Carrelage de salle de bain"
                 fill
                 className="object-cover"
