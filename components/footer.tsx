@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Instagram, Mail, Phone, MapPin, Square } from "lucide-react";
+import { INFO } from "@/lib/constants/info";
 
 export default function Footer() {
   return (
@@ -79,24 +80,28 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-full bg-cs-dark-lighter flex items-center justify-center border border-gray-800">
                   <Phone size={14} className="text-cs-orange" />
                 </div>
-                <span className="text-gray-300">06 61 02 48 14</span>
+                <span className="text-gray-300">
+                  {INFO.PHONE}
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-cs-dark-lighter flex items-center justify-center border border-gray-800">
                   <Mail size={14} className="text-cs-orange" />
                 </div>
                 <a
-                  href="mailto:tschannnicolas@gmail.com"
+                  href={`mailto:${INFO.EMAIL}`}
                   className="text-gray-300 hover:text-cs-orange"
                 >
-                  tschannnicolas@gmail.com
+                  {INFO.EMAIL}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-cs-dark-lighter flex items-center justify-center border border-gray-800">
                   <MapPin size={14} className="text-cs-orange" />
                 </div>
-                <span className="text-gray-300">Haut-Rhin, Alsace</span>
+                <span className="text-gray-300">
+                  {INFO.ADDRESS}, {INFO.POSTAL_CODE}
+                </span>
               </li>
               <li className="flex items-center gap-3 mt-4">
                 <div className="w-8 h-8 rounded-full bg-cs-dark-lighter flex items-center justify-center border border-gray-800">
@@ -109,7 +114,7 @@ export default function Footer() {
                   className="text-gray-300 hover:text-cs-orange"
                   aria-label="Instagram"
                 >
-                  @carrestyle_carrelage
+                  {INFO.INSTAGRAM}
                 </a>
               </li>
             </ul>

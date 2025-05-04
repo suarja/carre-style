@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import MultiStepForm from "@/components/multi-step-form/form-container"
 import { Square } from "lucide-react"
+import { INFO } from "@/lib/constants/info"
 
 export const metadata: Metadata = {
   title: "Demande de Devis | Carré Style - Haut-Rhin Alsace",
@@ -92,11 +93,15 @@ export default function DevisPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-gray-400">Vous préférez nous appeler ?</p>
-                  <p className="text-lg font-bold text-white">06 61 02 48 14</p>
+                  <p className="text-lg font-bold text-white">
+                    {INFO.PHONE}
+                  </p>
                 </div>
                 <div className="text-right">
                   <p className="text-sm text-gray-400">Ou nous écrire ?</p>
-                  <p className="text-lg font-bold text-cs-orange">tschannnicolas@gmail.com</p>
+                  <p className="text-lg font-bold text-cs-orange">
+                    {INFO.EMAIL}
+                  </p>
                 </div>
               </div>
             </div>

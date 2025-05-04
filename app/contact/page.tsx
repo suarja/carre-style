@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact-form";
 import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { INFO } from "@/lib/constants/info";
 
 export const metadata: Metadata = {
   title: "Contact | Carré Style - Haut-Rhin Alsace",
@@ -35,9 +36,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Téléphone</h3>
-                    <p className="text-gray-300">06 61 02 48 14</p>
+                    <p className="text-gray-300">{INFO.PHONE}</p>
                     <p className="text-sm text-gray-400">
-                      Du lundi au vendredi, 8h-19h
+                      {INFO.OPENING_HOURS}
                     </p>
                   </div>
                 </div>
@@ -52,7 +53,7 @@ export default function Contact() {
                       href="mailto:tschannnicolas@gmail.com"
                       className="text-gray-300 hover:text-cs-orange"
                     >
-                      tschannnicolas@gmail.com
+                      {INFO.EMAIL}
                     </a>
                     <p className="text-sm text-gray-400 mt-1">
                       Nous vous répondons sous 24h
@@ -66,9 +67,11 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Adresse</h3>
-                    <p className="text-gray-300">Haut-Rhin, Alsace</p>
+                    <p className="text-gray-300">
+                      {INFO.ADDRESS}, {INFO.POSTAL_CODE}
+                    </p>
                     <p className="text-sm text-gray-400 mt-1">
-                      Zone d'intervention : Haut-Rhin et environs
+                      Zone d'intervention : {INFO.ADDRESS} et environs
                     </p>
                   </div>
                 </div>
@@ -85,7 +88,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-cs-orange"
                     >
-                      @carrestyle_carrelage
+                      {INFO.INSTAGRAM}
                     </a>
                     <p className="text-sm text-gray-400 mt-1">
                       Suivez nos dernières réalisations
@@ -100,7 +103,7 @@ export default function Contact() {
                 </h3>
                 <div className="aspect-video relative rounded-lg overflow-hidden border border-gray-700">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343115.2551263406!2d7.1369147!3d47.8590256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47919bd2c4eb6077%3A0x409ce34b31458d0!2sHaut-Rhin!5e0!3m2!1sfr!2sfr!4v1651234567890!5m2!1sfr!2sfr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1360480.0440293045!2d6.218240652257877!3d48.24151631355572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479146a3db7796bf%3A0x10a5fb99a3724e0!2sAlsace!5e0!3m2!1sfr!2sfr!4v1746341210431!5m2!1sfr!2sfr"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
