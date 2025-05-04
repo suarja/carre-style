@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import HeroSection from "@/components/hero-section";
 import Accordion from "@/components/accordion";
@@ -7,7 +6,8 @@ import Gallery from "@/components/gallery";
 import Timeline from "@/components/timeline";
 import BeforeAfter from "@/components/before-after";
 import ProjectShowcase from "@/components/project-showcase";
-import { Square } from "lucide-react";
+import DemanderDevisSection from "@/components/demander-devis-section";
+
 
 export const metadata: Metadata = {
   title: "Béton Imprimé | Carré Style - Haut-Rhin Alsace",
@@ -405,45 +405,7 @@ export default function BetonImprime() {
         </div>
       </section>
 
-      <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-cs-orange to-cs-orange-dark"></div>
-
-        {/* Motif géométrique */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="grid grid-cols-12 h-full">
-            {[...Array(24)].map((_, i) => (
-              <div key={i} className="border-r border-t border-white"></div>
-            ))}
-          </div>
-        </div>
-
-        <div className="container-custom relative z-10 text-center">
-          <div className="flex items-center justify-center mb-6">
-            <div className="w-12 h-1 bg-white/30"></div>
-            <Square className="text-white mx-4" size={12} />
-            <div className="w-12 h-1 bg-white/30"></div>
-          </div>
-
-          <h2 className="text-white mb-6 text-3xl md:text-4xl">
-            Prêt à transformer votre espace extérieur ?
-          </h2>
-
-          <div className="flex items-center justify-center mt-6">
-            <div className="w-12 h-1 bg-white/30"></div>
-            <Square className="text-white mx-4" size={12} />
-            <div className="w-12 h-1 bg-white/30"></div>
-          </div>
-
-          <div className="mt-8">
-            <Link
-              href="/contact#devis"
-              className="btn bg-white text-cs-orange hover:bg-gray-100 hover:shadow-lg transition-all duration-300 shadow-md"
-            >
-              Demander un devis gratuit
-            </Link>
-          </div>
-        </div>
-      </section>
+    <DemanderDevisSection />
     </>
   );
 }
