@@ -20,8 +20,8 @@ export default function HeroSection({
 }: HeroSectionProps) {
   const isBeton = imagePath.includes("beton");
   const bgImageClass = isBeton
-    ? "absolute inset-0 bg-gradient-to-r from-black/90 to-black/80"
-    : "absolute inset-0 bg-gradient-to-r from-black/80 to-black/60";
+    ? "absolute inset-0 bg-gradient-to-r from-black/80 to-black/70"
+    : "absolute inset-0 bg-gradient-to-r from-black/70 to-black/60";
   return (
     <section className="relative h-[80vh] min-h-[600px] flex items-center">
       <div className="absolute inset-0 z-0">
