@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Transformez vos espaces intérieurs et extérieurs avec notre expertise en carrelage et béton imprimé. Artisan qualifié dans le Haut-Rhin en Alsace.",
     images: [
       {
-        url: "/carrestyle-og.png",
+        url: "/images/carrestyle-og.png",
         width: 1200,
         height: 630,
         alt: "Carré Style - Spécialiste du carrelage et béton imprimé en Alsace",
