@@ -135,7 +135,7 @@ export default function Carrelage() {
 
   const galleryImages = [
     {
-      src: "/images/carrelage-cheminee.png",
+      src: "/carrelage/opengraph-image",
       alt: "Carrelage de cheminée",
     },
     {
