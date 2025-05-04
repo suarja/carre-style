@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Instagram, Mail, Phone, MapPin, Square } from "lucide-react"
+import Link from "next/link";
+import { Instagram, Mail, Phone, MapPin, Square } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -24,7 +24,8 @@ export default function Footer() {
               <span className="logo-style text-2xl ml-1">Style</span>
             </div>
             <p className="text-gray-300 mb-6">
-              Le style de toutes vos envies. Spécialiste du carrelage et du béton imprimé dans le Haut-Rhin en Alsace.
+              Le style de toutes vos envies. Spécialiste du carrelage et du
+              béton imprimé dans le Haut-Rhin en Alsace.
             </p>
             <div className="flex items-center">
               <div className="w-12 h-0.5 bg-cs-orange/40 mr-3"></div>
@@ -39,19 +40,28 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/beton-imprime" className="text-gray-300 hover:text-cs-orange flex items-center group">
+                <Link
+                  href="/beton-imprime"
+                  className="text-gray-300 hover:text-cs-orange flex items-center group"
+                >
                   <div className="w-0 h-0.5 bg-cs-orange mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-300"></div>
                   Béton Imprimé
                 </Link>
               </li>
               <li>
-                <Link href="/carrelage" className="text-gray-300 hover:text-cs-orange flex items-center group">
+                <Link
+                  href="/carrelage"
+                  className="text-gray-300 hover:text-cs-orange flex items-center group"
+                >
                   <div className="w-0 h-0.5 bg-cs-orange mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-300"></div>
                   Carrelage
                 </Link>
               </li>
               <li>
-                <Link href="/contact#devis" className="text-gray-300 hover:text-cs-orange flex items-center group">
+                <Link
+                  href="/contact#devis"
+                  className="text-gray-300 hover:text-cs-orange flex items-center group"
+                >
                   <div className="w-0 h-0.5 bg-cs-orange mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-300"></div>
                   Demande de Devis
                 </Link>
@@ -75,7 +85,10 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-full bg-cs-dark-lighter flex items-center justify-center border border-gray-800">
                   <Mail size={14} className="text-cs-orange" />
                 </div>
-                <a href="mailto:tschannnicolas@gmail.com" className="text-gray-300 hover:text-cs-orange">
+                <a
+                  href="mailto:tschannnicolas@gmail.com"
+                  className="text-gray-300 hover:text-cs-orange"
+                >
                   tschannnicolas@gmail.com
                 </a>
               </li>
@@ -104,10 +117,15 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Carré Style. Tous droits réservés.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Carré Style. Tous droits réservés.
+          </p>
           <div className="mt-4 flex items-center justify-center">
             <div className="w-8 h-0.5 bg-gray-800"></div>
-            <Link href="/mentions-legales" className="mx-4 hover:text-cs-orange">
+            <Link
+              href="/mentions-legales"
+              className="mx-4 hover:text-cs-orange"
+            >
               Mentions Légales
             </Link>
             <div className="w-8 h-0.5 bg-gray-800"></div>
@@ -115,5 +133,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

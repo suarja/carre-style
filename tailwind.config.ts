@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 const config: Config = {
   darkMode: ["class"],
   content: [
@@ -64,9 +64,10 @@ const config: Config = {
         sans: ["var(--font-inter)"],
         heading: ["var(--font-montserrat)"],
         script: ["var(--font-dancing-script)"], // Pour le "Style" du logo
+        geometric: ["var(--font-chakra-petch)"], // Pour le "CARRÉ" du logo
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
-export default config
+};
+export default config;

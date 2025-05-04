@@ -1,49 +1,55 @@
-import Image from "next/image"
-import Link from "next/link"
-import type { Metadata } from "next"
-import HeroSection from "@/components/hero-section"
-import Accordion from "@/components/accordion"
-import Gallery from "@/components/gallery"
-import Timeline from "@/components/timeline"
-import BeforeAfter from "@/components/before-after"
-import ProjectShowcase from "@/components/project-showcase"
-import { Square } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
+import HeroSection from "@/components/hero-section";
+import Accordion from "@/components/accordion";
+import Gallery from "@/components/gallery";
+import Timeline from "@/components/timeline";
+import BeforeAfter from "@/components/before-after";
+import ProjectShowcase from "@/components/project-showcase";
+import { Square } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Béton Imprimé | Carré Style - Haut-Rhin Alsace",
   description:
     "Spécialiste du béton imprimé pour vos terrasses, allées et sols extérieurs dans le Haut-Rhin en Alsace. Motifs variés et finitions de qualité.",
-  keywords: "béton imprimé, terrasse, allée, sol extérieur, motif décoratif, Haut-Rhin, Alsace",
-}
+  keywords:
+    "béton imprimé, terrasse, allée, sol extérieur, motif décoratif, Haut-Rhin, Alsace",
+};
 
 export default function BetonImprime() {
   const timelineItems = [
     {
       step: 1,
       title: "Consultation et devis",
-      description: "Nous discutons de votre projet, prenons les mesures et vous proposons un devis détaillé gratuit.",
+      description:
+        "Nous discutons de votre projet, prenons les mesures et vous proposons un devis détaillé gratuit.",
     },
     {
       step: 2,
       title: "Préparation du terrain",
-      description: "Nous préparons soigneusement le terrain pour assurer une base solide et durable.",
+      description:
+        "Nous préparons soigneusement le terrain pour assurer une base solide et durable.",
     },
     {
       step: 3,
       title: "Coulage du béton",
-      description: "Le béton est coulé avec précision selon les spécifications du projet.",
+      description:
+        "Le béton est coulé avec précision selon les spécifications du projet.",
     },
     {
       step: 4,
       title: "Impression et coloration",
-      description: "Nous appliquons les motifs choisis et les colorants pour obtenir l'aspect désiré.",
+      description:
+        "Nous appliquons les motifs choisis et les colorants pour obtenir l'aspect désiré.",
     },
     {
       step: 5,
       title: "Finition et protection",
-      description: "Application des produits de finition pour protéger et préserver votre béton imprimé.",
+      description:
+        "Application des produits de finition pour protéger et préserver votre béton imprimé.",
     },
-  ]
+  ];
 
   const accordionItems = [
     {
@@ -67,7 +73,9 @@ export default function BetonImprime() {
       title: "Quels motifs sont disponibles ?",
       content: (
         <div>
-          <p>Nous proposons une large gamme de motifs pour votre béton imprimé :</p>
+          <p>
+            Nous proposons une large gamme de motifs pour votre béton imprimé :
+          </p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Pavés et pierres naturelles</li>
             <li>Ardoise et pierre de taille</li>
@@ -75,7 +83,10 @@ export default function BetonImprime() {
             <li>Motifs géométriques</li>
             <li>Designs personnalisés</li>
           </ul>
-          <p className="mt-2">Nous pouvons également créer des motifs sur mesure selon vos préférences.</p>
+          <p className="mt-2">
+            Nous pouvons également créer des motifs sur mesure selon vos
+            préférences.
+          </p>
         </div>
       ),
     },
@@ -83,10 +94,11 @@ export default function BetonImprime() {
       title: "Quelle est la durée des travaux ?",
       content: (
         <p>
-          La durée des travaux dépend de la taille et de la complexité du projet. En général, un projet standard de
-          béton imprimé peut prendre entre 3 et 7 jours, incluant la préparation du terrain, le coulage du béton,
-          l'impression et le temps de séchage. Nous vous fournirons un calendrier précis lors de l'établissement du
-          devis.
+          La durée des travaux dépend de la taille et de la complexité du
+          projet. En général, un projet standard de béton imprimé peut prendre
+          entre 3 et 7 jours, incluant la préparation du terrain, le coulage du
+          béton, l'impression et le temps de séchage. Nous vous fournirons un
+          calendrier précis lors de l'établissement du devis.
         </p>
       ),
     },
@@ -101,30 +113,55 @@ export default function BetonImprime() {
             <li>Application d'un produit de protection tous les 2-3 ans</li>
             <li>Éviter les produits chimiques agressifs</li>
           </ul>
-          <p className="mt-2">Nous vous fournirons des conseils d'entretien détaillés à la fin des travaux.</p>
+          <p className="mt-2">
+            Nous vous fournirons des conseils d'entretien détaillés à la fin des
+            travaux.
+          </p>
         </div>
       ),
     },
-  ]
+  ];
 
   const galleryImages = [
-    { src: "/images/beton-imprime-terrasse.png", alt: "Terrasse en béton imprimé" },
+    {
+      src: "/images/beton-imprime-terrasse.png",
+      alt: "Terrasse en béton imprimé",
+    },
     { src: "/images/beton-imprime-allee.png", alt: "Allée en béton imprimé" },
-    { src: "/images/beton-imprime-motif.png", alt: "Motif décoratif en béton imprimé" },
+    {
+      src: "/images/beton-imprime-motif.png",
+      alt: "Motif décoratif en béton imprimé",
+    },
     { src: "/images/beton-imprime-entree.png", alt: "Entrée en béton imprimé" },
-    { src: "/images/beton-imprime-jardin.png", alt: "Béton imprimé dans un jardin" },
-    { src: "/images/beton-imprime-texture.png", alt: "Texture de béton imprimé" },
-    { src: "/images/beton-imprime-piscine.png", alt: "Contour de piscine en béton imprimé" },
-    { src: "/images/beton-imprime-terrasse-grise.png", alt: "Terrasse en béton imprimé gris" },
-    { src: "/images/beton-imprime-terrasse-ocre.png", alt: "Terrasse en béton imprimé ocre" },
-  ]
+    {
+      src: "/images/beton-imprime-jardin.png",
+      alt: "Béton imprimé dans un jardin",
+    },
+    {
+      src: "/images/beton-imprime-texture.png",
+      alt: "Texture de béton imprimé",
+    },
+    {
+      src: "/images/beton-imprime-piscine.png",
+      alt: "Contour de piscine en béton imprimé",
+    },
+    {
+      src: "/images/beton-imprime-terrasse-grise.png",
+      alt: "Terrasse en béton imprimé gris",
+    },
+    {
+      src: "/images/beton-imprime-terrasse-ocre.png",
+      alt: "Terrasse en béton imprimé ocre",
+    },
+  ];
 
   return (
     <>
       <HeroSection
         title={
           <>
-            <span className="logo-carre">CARRÉ</span> <span className="logo-style">Style</span> — Béton Imprimé
+            <span className="logo-carre">CARRÉ</span>{" "}
+            <span className="logo-style">Style</span> — Béton Imprimé
           </>
         }
         subtitle="Transformez vos espaces extérieurs avec élégance et durabilité"
@@ -141,20 +178,26 @@ export default function BetonImprime() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block relative mb-6">
-                <h2 className="mb-0">Le béton imprimé, qu'est-ce que c'est ?</h2>
+                <h2 className="mb-0">
+                  Le béton imprimé, qu'est-ce que c'est ?
+                </h2>
                 <div className="absolute -bottom-2 left-0 w-24 h-1 bg-cs-orange"></div>
               </div>
               <p className="mb-4 text-gray-300">
-                Le béton imprimé est une technique innovante qui permet de reproduire l'aspect de matériaux naturels
-                comme la pierre, l'ardoise ou le bois, tout en offrant la durabilité et la résistance du béton.
+                Le béton imprimé est une technique innovante qui permet de
+                reproduire l'aspect de matériaux naturels comme la pierre,
+                l'ardoise ou le bois, tout en offrant la durabilité et la
+                résistance du béton.
               </p>
               <p className="mb-4 text-gray-300">
-                Cette solution est idéale pour les terrasses, allées, plages de piscine et autres surfaces extérieures,
-                combinant esthétique et fonctionnalité à un coût maîtrisé.
+                Cette solution est idéale pour les terrasses, allées, plages de
+                piscine et autres surfaces extérieures, combinant esthétique et
+                fonctionnalité à un coût maîtrisé.
               </p>
               <p className="text-gray-300">
-                Chez Carré Style, nous sommes spécialisés dans la création de surfaces en béton imprimé personnalisées
-                qui s'intègrent parfaitement à votre environnement extérieur.
+                Chez Carré Style, nous sommes spécialisés dans la création de
+                surfaces en béton imprimé personnalisées qui s'intègrent
+                parfaitement à votre environnement extérieur.
               </p>
             </div>
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden border border-gray-800 shadow-lg transform transition-transform duration-500 hover:scale-[1.02]">
@@ -188,7 +231,8 @@ export default function BetonImprime() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Découvrez la transformation de vos espaces extérieurs grâce au béton imprimé.
+              Découvrez la transformation de vos espaces extérieurs grâce au
+              béton imprimé.
             </p>
           </div>
 
@@ -204,8 +248,14 @@ export default function BetonImprime() {
 
             <ProjectShowcase
               images={[
-                { src: "/images/beton-imprime-piscine.png", alt: "Contour de piscine en béton imprimé" },
-                { src: "/images/beton-imprime-terrasse-grise.png", alt: "Terrasse en béton imprimé gris" },
+                {
+                  src: "/images/beton-imprime-piscine.png",
+                  alt: "Contour de piscine en béton imprimé",
+                },
+                {
+                  src: "/images/beton-imprime-terrasse-grise.png",
+                  alt: "Terrasse en béton imprimé gris",
+                },
               ]}
               title="Nos réalisations récentes"
               description="Contours de piscine, terrasses et allées - nous adaptons le béton imprimé à tous vos espaces extérieurs avec différentes finitions et coloris."
@@ -222,7 +272,8 @@ export default function BetonImprime() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Découvrez quelques exemples de nos projets récents qui illustrent notre savoir-faire.
+              Découvrez quelques exemples de nos projets récents qui illustrent
+              notre savoir-faire.
             </p>
           </div>
 
@@ -265,8 +316,8 @@ export default function BetonImprime() {
               </div>
               <h3 className="mb-2">Durabilité</h3>
               <p className="text-gray-300">
-                Résistant aux intempéries, au gel et aux UV, le béton imprimé conserve son aspect esthétique pendant de
-                nombreuses années.
+                Résistant aux intempéries, au gel et aux UV, le béton imprimé
+                conserve son aspect esthétique pendant de nombreuses années.
               </p>
             </div>
             <div className="card p-6 transform transition-all duration-300 hover:border-cs-orange/50 md:translate-y-4">
@@ -288,8 +339,8 @@ export default function BetonImprime() {
               </div>
               <h3 className="mb-2">Personnalisation</h3>
               <p className="text-gray-300">
-                Une multitude de motifs, textures et couleurs pour créer un espace unique qui reflète votre style
-                personnel.
+                Une multitude de motifs, textures et couleurs pour créer un
+                espace unique qui reflète votre style personnel.
               </p>
             </div>
             <div className="card p-6 transform transition-all duration-300 hover:border-cs-orange/50">
@@ -311,8 +362,8 @@ export default function BetonImprime() {
               </div>
               <h3 className="mb-2">Rapport qualité-prix</h3>
               <p className="text-gray-300">
-                Une alternative économique aux matériaux naturels comme la pierre, tout en offrant un rendu esthétique
-                similaire.
+                Une alternative économique aux matériaux naturels comme la
+                pierre, tout en offrant un rendu esthétique similaire.
               </p>
             </div>
           </div>
@@ -327,7 +378,8 @@ export default function BetonImprime() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Voici les étapes clés de la réalisation de votre projet en béton imprimé.
+              Voici les étapes clés de la réalisation de votre projet en béton
+              imprimé.
             </p>
           </div>
 
@@ -372,7 +424,9 @@ export default function BetonImprime() {
             <div className="w-12 h-1 bg-white/30"></div>
           </div>
 
-          <h2 className="text-white mb-6 text-3xl md:text-4xl">Prêt à transformer votre espace extérieur ?</h2>
+          <h2 className="text-white mb-6 text-3xl md:text-4xl">
+            Prêt à transformer votre espace extérieur ?
+          </h2>
 
           <div className="flex items-center justify-center mt-6">
             <div className="w-12 h-1 bg-white/30"></div>
@@ -391,5 +445,5 @@ export default function BetonImprime() {
         </div>
       </section>
     </>
-  )
+  );
 }

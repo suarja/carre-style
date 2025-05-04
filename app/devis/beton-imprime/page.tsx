@@ -1,15 +1,16 @@
-import type { Metadata } from "next"
-import MultiStepForm from "@/components/multi-step-form/form-container"
-import { Square } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import type { Metadata } from "next";
+import MultiStepForm from "@/components/multi-step-form/form-container";
+import { Square } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Devis Béton Imprimé | Carré Style - Haut-Rhin Alsace",
   description:
     "Demandez un devis personnalisé pour votre projet de béton imprimé dans le Haut-Rhin en Alsace. Terrasses, allées, entrées de garage et plus encore.",
-  keywords: "devis béton imprimé, terrasse, allée, entrée garage, Haut-Rhin, Alsace",
-}
+  keywords:
+    "devis béton imprimé, terrasse, allée, entrée garage, Haut-Rhin, Alsace",
+};
 
 export default function DevisBetonImprimePage() {
   return (
@@ -18,13 +19,14 @@ export default function DevisBetonImprimePage() {
         <div className="text-center mb-12">
           <div className="inline-block relative">
             <h1 className="mb-4">
-              <span className="logo-carre">CARRÉ</span> <span className="logo-style">Style</span> — Devis Béton Imprimé
+              <span className="logo-carre">CARRÉ</span>{" "}
+              <span className="logo-style">Style</span> — Devis Béton Imprimé
             </h1>
             <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-            Transformez votre espace extérieur avec notre béton imprimé de qualité. Obtenez un devis personnalisé en
-            quelques clics.
+            Transformez votre espace extérieur avec notre béton imprimé de
+            qualité. Obtenez un devis personnalisé en quelques clics.
           </p>
         </div>
 
@@ -36,7 +38,9 @@ export default function DevisBetonImprimePage() {
           <div className="space-y-8">
             <div className="bg-cs-dark-lighter rounded-lg border border-gray-800 shadow-lg overflow-hidden">
               <div className="p-6 border-b border-gray-800">
-                <h3 className="text-xl font-bold text-white mb-1">Nos réalisations en béton imprimé</h3>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  Nos réalisations en béton imprimé
+                </h3>
               </div>
 
               <div className="grid grid-cols-2 gap-1">
@@ -79,7 +83,10 @@ export default function DevisBetonImprimePage() {
               </div>
 
               <div className="p-4 text-center">
-                <Link href="/beton-imprime" className="text-cs-orange hover:underline flex items-center justify-center">
+                <Link
+                  href="/beton-imprime"
+                  className="text-cs-orange hover:underline flex items-center justify-center"
+                >
                   Voir toutes nos réalisations
                   <Square className="ml-2" size={12} />
                 </Link>
@@ -88,13 +95,16 @@ export default function DevisBetonImprimePage() {
 
             <div className="bg-cs-dark-lighter rounded-lg border border-gray-800 shadow-lg overflow-hidden">
               <div className="p-6 border-b border-gray-800">
-                <h3 className="text-xl font-bold text-white mb-1">Témoignages clients</h3>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  Témoignages clients
+                </h3>
               </div>
 
               <div className="p-6 space-y-4">
                 <div className="bg-cs-dark p-4 rounded-lg border border-gray-700">
                   <p className="italic text-gray-300 mb-2">
-                    "Travail impeccable pour notre terrasse en béton imprimé. Le résultat est magnifique et durable."
+                    "Travail impeccable pour notre terrasse en béton imprimé. Le
+                    résultat est magnifique et durable."
                   </p>
                   <div className="flex items-center">
                     <div className="w-8 h-0.5 bg-cs-orange/40 mr-3"></div>
@@ -107,7 +117,8 @@ export default function DevisBetonImprimePage() {
 
                 <div className="bg-cs-dark p-4 rounded-lg border border-gray-700">
                   <p className="italic text-gray-300 mb-2">
-                    "Équipe à l'écoute et travail soigné. Je recommande vivement pour tous vos projets."
+                    "Équipe à l'écoute et travail soigné. Je recommande vivement
+                    pour tous vos projets."
                   </p>
                   <div className="flex items-center">
                     <div className="w-8 h-0.5 bg-cs-orange/40 mr-3"></div>
@@ -123,5 +134,5 @@ export default function DevisBetonImprimePage() {
         </div>
       </div>
     </section>
-  )
+  );
 }

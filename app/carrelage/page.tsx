@@ -1,27 +1,29 @@
-import Image from "next/image"
-import Link from "next/link"
-import type { Metadata } from "next"
-import HeroSection from "@/components/hero-section"
-import Accordion from "@/components/accordion"
-import Gallery from "@/components/gallery"
-import Timeline from "@/components/timeline"
-import BeforeAfter from "@/components/before-after"
-import ProjectShowcase from "@/components/project-showcase"
-import { Square } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
+import HeroSection from "@/components/hero-section";
+import Accordion from "@/components/accordion";
+import Gallery from "@/components/gallery";
+import Timeline from "@/components/timeline";
+import BeforeAfter from "@/components/before-after";
+import ProjectShowcase from "@/components/project-showcase";
+import { Square } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Carrelage | Carré Style - Haut-Rhin Alsace",
   description:
     "Spécialiste de la pose de carrelage pour salles de bain, cuisines et sols intérieurs dans le Haut-Rhin en Alsace. Finitions soignées et conseils personnalisés.",
-  keywords: "carrelage, pose carrelage, salle de bain, cuisine, sol intérieur, Haut-Rhin, Alsace",
-}
+  keywords:
+    "carrelage, pose carrelage, salle de bain, cuisine, sol intérieur, Haut-Rhin, Alsace",
+};
 
 export default function Carrelage() {
   const timelineItems = [
     {
       step: 1,
       title: "Consultation et devis",
-      description: "Nous discutons de votre projet, prenons les mesures et vous proposons un devis détaillé gratuit.",
+      description:
+        "Nous discutons de votre projet, prenons les mesures et vous proposons un devis détaillé gratuit.",
     },
     {
       step: 2,
@@ -32,26 +34,31 @@ export default function Carrelage() {
     {
       step: 3,
       title: "Préparation du support",
-      description: "Nous préparons soigneusement la surface pour assurer une pose parfaite et durable.",
+      description:
+        "Nous préparons soigneusement la surface pour assurer une pose parfaite et durable.",
     },
     {
       step: 4,
       title: "Pose du carrelage",
-      description: "Notre équipe pose votre carrelage avec précision et attention aux détails.",
+      description:
+        "Notre équipe pose votre carrelage avec précision et attention aux détails.",
     },
     {
       step: 5,
       title: "Finition et nettoyage",
-      description: "Nous réalisons les joints et le nettoyage final pour un résultat impeccable.",
+      description:
+        "Nous réalisons les joints et le nettoyage final pour un résultat impeccable.",
     },
-  ]
+  ];
 
   const accordionItems = [
     {
       title: "Quels types de carrelage proposez-vous ?",
       content: (
         <div>
-          <p>Nous proposons une large gamme de carrelages pour tous vos projets :</p>
+          <p>
+            Nous proposons une large gamme de carrelages pour tous vos projets :
+          </p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Grès cérame</li>
             <li>Faïence</li>
@@ -61,7 +68,10 @@ export default function Carrelage() {
             <li>Grands formats</li>
             <li>Carrelage imitation bois</li>
           </ul>
-          <p className="mt-2">Nous pouvons vous conseiller sur le type de carrelage le plus adapté à votre projet.</p>
+          <p className="mt-2">
+            Nous pouvons vous conseiller sur le type de carrelage le plus adapté
+            à votre projet.
+          </p>
         </div>
       ),
     },
@@ -85,9 +95,11 @@ export default function Carrelage() {
       title: "Quelle est la durée des travaux ?",
       content: (
         <p>
-          La durée des travaux dépend de la surface à carreler et de la complexité du projet. En général, une salle de
-          bain standard peut être carrelée en 3 à 5 jours, tandis qu'une pièce à vivre peut prendre 5 à 7 jours. Nous
-          vous fournirons un calendrier précis lors de l'établissement du devis.
+          La durée des travaux dépend de la surface à carreler et de la
+          complexité du projet. En général, une salle de bain standard peut être
+          carrelée en 3 à 5 jours, tandis qu'une pièce à vivre peut prendre 5 à
+          7 jours. Nous vous fournirons un calendrier précis lors de
+          l'établissement du devis.
         </p>
       ),
     },
@@ -98,33 +110,67 @@ export default function Carrelage() {
           <p>L'entretien du carrelage est simple :</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Nettoyage régulier à l'eau et au savon doux</li>
-            <li>Éviter les produits acides ou abrasifs qui peuvent endommager les joints</li>
-            <li>Pour les carrelages poreux, application d'un produit de protection tous les 1-2 ans</li>
-            <li>Nettoyage des joints avec une brosse souple et un produit spécifique si nécessaire</li>
+            <li>
+              Éviter les produits acides ou abrasifs qui peuvent endommager les
+              joints
+            </li>
+            <li>
+              Pour les carrelages poreux, application d'un produit de protection
+              tous les 1-2 ans
+            </li>
+            <li>
+              Nettoyage des joints avec une brosse souple et un produit
+              spécifique si nécessaire
+            </li>
           </ul>
-          <p className="mt-2">Nous vous fournirons des conseils d'entretien adaptés à votre type de carrelage.</p>
+          <p className="mt-2">
+            Nous vous fournirons des conseils d'entretien adaptés à votre type
+            de carrelage.
+          </p>
         </div>
       ),
     },
-  ]
+  ];
 
   const galleryImages = [
-    { src: "/images/carrelage-salle-de-bain.png", alt: "Carrelage de salle de bain" },
+    {
+      src: "/images/carrelage-salle-de-bain.png",
+      alt: "Carrelage de salle de bain",
+    },
     { src: "/images/carrelage-cuisine.png", alt: "Carrelage de cuisine" },
-    { src: "/images/carrelage-sdb-moderne.png", alt: "Salle de bain moderne avec douche à l'italienne" },
-    { src: "/images/carrelage-douche-italienne.png", alt: "Douche à l'italienne avec carrelage texturé" },
-    { src: "/images/carrelage-douche-grise.png", alt: "Douche avec carrelage gris et niches" },
-    { src: "/images/carrelage-escalier-marbre.png", alt: "Escalier avec carrelage effet marbre" },
-    { src: "/images/carrelage-mur-xxl.png", alt: "Mur avec carrelage grand format" },
-    { src: "/images/carrelage-wc-design.png", alt: "WC suspendus avec carrelage gris foncé" },
-  ]
+    {
+      src: "/images/carrelage-sdb-moderne.png",
+      alt: "Salle de bain moderne avec douche à l'italienne",
+    },
+    {
+      src: "/images/carrelage-douche-italienne.png",
+      alt: "Douche à l'italienne avec carrelage texturé",
+    },
+    {
+      src: "/images/carrelage-douche-grise.png",
+      alt: "Douche avec carrelage gris et niches",
+    },
+    {
+      src: "/images/carrelage-escalier-marbre.png",
+      alt: "Escalier avec carrelage effet marbre",
+    },
+    {
+      src: "/images/carrelage-mur-xxl.png",
+      alt: "Mur avec carrelage grand format",
+    },
+    {
+      src: "/images/carrelage-wc-design.png",
+      alt: "WC suspendus avec carrelage gris foncé",
+    },
+  ];
 
   return (
     <>
       <HeroSection
         title={
           <>
-            <span className="logo-carre">CARRÉ</span> <span className="logo-style">Style</span> — Carrelage
+            <span className="logo-carre">CARRÉ</span>{" "}
+            <span className="logo-style">Style</span> — Carrelage
           </>
         }
         subtitle="Des solutions élégantes et durables pour vos espaces intérieurs"
@@ -145,17 +191,21 @@ export default function Carrelage() {
                 <div className="absolute -bottom-2 left-0 w-24 h-1 bg-cs-orange"></div>
               </div>
               <p className="mb-4 text-gray-300">
-                Chez Carré Style, nous sommes spécialisés dans la pose de carrelage pour tous vos espaces intérieurs.
-                Que ce soit pour votre salle de bain, votre cuisine ou vos pièces à vivre, nous vous garantissons un
-                travail soigné et des finitions impeccables.
+                Chez Carré Style, nous sommes spécialisés dans la pose de
+                carrelage pour tous vos espaces intérieurs. Que ce soit pour
+                votre salle de bain, votre cuisine ou vos pièces à vivre, nous
+                vous garantissons un travail soigné et des finitions
+                impeccables.
               </p>
               <p className="mb-4 text-gray-300">
-                Notre équipe d'artisans qualifiés maîtrise toutes les techniques de pose, des plus classiques aux plus
-                complexes, pour donner vie à vos projets avec précision et esthétisme.
+                Notre équipe d'artisans qualifiés maîtrise toutes les techniques
+                de pose, des plus classiques aux plus complexes, pour donner vie
+                à vos projets avec précision et esthétisme.
               </p>
               <p className="text-gray-300">
-                Nous vous accompagnons dans le choix des matériaux et des designs qui correspondent à vos goûts et à vos
-                besoins, pour un résultat qui vous ressemble.
+                Nous vous accompagnons dans le choix des matériaux et des
+                designs qui correspondent à vos goûts et à vos besoins, pour un
+                résultat qui vous ressemble.
               </p>
             </div>
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden order-1 md:order-2 border border-gray-800 shadow-lg transform transition-transform duration-500 hover:scale-[1.02]">
@@ -189,7 +239,8 @@ export default function Carrelage() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Découvrez la transformation de vos espaces intérieurs grâce à notre expertise en carrelage.
+              Découvrez la transformation de vos espaces intérieurs grâce à
+              notre expertise en carrelage.
             </p>
           </div>
 
@@ -216,8 +267,14 @@ export default function Carrelage() {
           <div className="mt-12">
             <ProjectShowcase
               images={[
-                { src: "/images/carrelage-mur-xxl.png", alt: "Mur avec carrelage grand format" },
-                { src: "/images/carrelage-wc-design.png", alt: "WC suspendus avec carrelage gris foncé" },
+                {
+                  src: "/images/carrelage-mur-xxl.png",
+                  alt: "Mur avec carrelage grand format",
+                },
+                {
+                  src: "/images/carrelage-wc-design.png",
+                  alt: "WC suspendus avec carrelage gris foncé",
+                },
               ]}
               title="Nos réalisations spéciales"
               description="Des projets sur-mesure qui démontrent notre savoir-faire technique et notre capacité à relever tous les défis, des grands formats aux espaces réduits."
@@ -234,7 +291,8 @@ export default function Carrelage() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Découvrez quelques exemples de nos projets récents qui illustrent notre savoir-faire.
+              Découvrez quelques exemples de nos projets récents qui illustrent
+              notre savoir-faire.
             </p>
           </div>
 
@@ -277,8 +335,9 @@ export default function Carrelage() {
               </div>
               <h3 className="mb-2">Salles de bain</h3>
               <p className="text-gray-300">
-                Création de salles de bain élégantes et fonctionnelles, avec une attention particulière aux zones
-                humides et aux douches à l'italienne.
+                Création de salles de bain élégantes et fonctionnelles, avec une
+                attention particulière aux zones humides et aux douches à
+                l'italienne.
               </p>
             </div>
             <div className="card p-6 transform transition-all duration-300 hover:border-cs-orange/50 md:translate-y-4">
@@ -300,8 +359,9 @@ export default function Carrelage() {
               </div>
               <h3 className="mb-2">Cuisines</h3>
               <p className="text-gray-300">
-                Pose de carrelage au sol et en crédence pour des cuisines pratiques et esthétiques, résistantes aux
-                taches et à l'humidité.
+                Pose de carrelage au sol et en crédence pour des cuisines
+                pratiques et esthétiques, résistantes aux taches et à
+                l'humidité.
               </p>
             </div>
             <div className="card p-6 transform transition-all duration-300 hover:border-cs-orange/50">
@@ -323,8 +383,8 @@ export default function Carrelage() {
               </div>
               <h3 className="mb-2">Pièces à vivre</h3>
               <p className="text-gray-300">
-                Carrelage pour séjours, entrées et couloirs, alliant esthétique et résistance pour un usage quotidien
-                intensif.
+                Carrelage pour séjours, entrées et couloirs, alliant esthétique
+                et résistance pour un usage quotidien intensif.
               </p>
             </div>
           </div>
@@ -339,7 +399,8 @@ export default function Carrelage() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Voici les étapes clés de la réalisation de votre projet de carrelage.
+              Voici les étapes clés de la réalisation de votre projet de
+              carrelage.
             </p>
           </div>
 
@@ -384,7 +445,9 @@ export default function Carrelage() {
             <div className="w-12 h-1 bg-white/30"></div>
           </div>
 
-          <h2 className="text-white mb-6 text-3xl md:text-4xl">Prêt à transformer votre intérieur ?</h2>
+          <h2 className="text-white mb-6 text-3xl md:text-4xl">
+            Prêt à transformer votre intérieur ?
+          </h2>
 
           <div className="flex items-center justify-center mt-6">
             <div className="w-12 h-1 bg-white/30"></div>
@@ -403,5 +466,5 @@ export default function Carrelage() {
         </div>
       </section>
     </>
-  )
+  );
 }

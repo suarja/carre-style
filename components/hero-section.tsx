@@ -1,17 +1,23 @@
-import type React from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Square } from "lucide-react"
+import type React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Square } from "lucide-react";
 
 interface HeroSectionProps {
-  title: string | React.ReactNode
-  subtitle: string
-  imagePath: string
-  buttonText: string
-  buttonLink: string
+  title: string | React.ReactNode;
+  subtitle: string;
+  imagePath: string;
+  buttonText: string;
+  buttonLink: string;
 }
 
-export default function HeroSection({ title, subtitle, imagePath, buttonText, buttonLink }: HeroSectionProps) {
+export default function HeroSection({
+  title,
+  subtitle,
+  imagePath,
+  buttonText,
+  buttonLink,
+}: HeroSectionProps) {
   return (
     <section className="relative h-[80vh] min-h-[600px] flex items-center">
       <div className="absolute inset-0 z-0">
@@ -37,7 +43,9 @@ export default function HeroSection({ title, subtitle, imagePath, buttonText, bu
           <div className="flex items-center mb-4">
             <div className="w-8 h-0.5 bg-cs-orange mr-4"></div>
             <Square className="text-cs-orange mr-2" size={8} />
-            <div className="text-sm uppercase tracking-wider text-cs-orange">Artisan qualifié</div>
+            <div className="text-sm uppercase tracking-wider text-cs-orange">
+              Artisan qualifié
+            </div>
           </div>
 
           <h1 className="mb-4 relative">
@@ -60,5 +68,5 @@ export default function HeroSection({ title, subtitle, imagePath, buttonText, bu
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-cs-dark to-transparent z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-cs-orange/30 z-10"></div>
     </section>
-  )
+  );
 }

@@ -57,7 +57,7 @@ body {
 
   /* Logo styling */
   .logo-carre {
-    @apply font-heading font-bold text-white uppercase;
+    @apply font-geometric font-bold text-white uppercase tracking-wide;
   }
   .logo-style {
     @apply font-script text-cs-orange;

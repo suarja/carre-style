@@ -1,8 +1,8 @@
-import Link from "next/link"
-import HeroSection from "@/components/hero-section"
-import ServiceCard from "@/components/service-card"
-import Testimonial from "@/components/testimonial"
-import { Square } from "lucide-react"
+import Link from "next/link";
+import HeroSection from "@/components/hero-section";
+import ServiceCard from "@/components/service-card";
+import Testimonial from "@/components/testimonial";
+import { Square } from "lucide-react";
 
 export default function Home() {
   return (
@@ -18,7 +18,8 @@ export default function Home() {
       <HeroSection
         title={
           <>
-            <span className="logo-carre">CARRÉ</span> <span className="logo-style">Style</span> — Le style de toutes vos
+            <span className="logo-carre">CARRÉ</span>{" "}
+            <span className="logo-style">Style</span> — Le style de toutes vos
             envies
           </>
         }
@@ -39,8 +40,9 @@ export default function Home() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Artisan spécialisé dans la pose de carrelage et la réalisation de béton imprimé, nous mettons notre
-              expertise à votre service pour tous vos projets d'intérieur et d'extérieur.
+              Artisan spécialisé dans la pose de carrelage et la réalisation de
+              béton imprimé, nous mettons notre expertise à votre service pour
+              tous vos projets d'intérieur et d'extérieur.
             </p>
           </div>
 
@@ -82,8 +84,8 @@ export default function Home() {
               <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
             </div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Notre engagement envers la qualité et la satisfaction client fait de nous le partenaire idéal pour vos
-              projets.
+              Notre engagement envers la qualité et la satisfaction client fait
+              de nous le partenaire idéal pour vos projets.
             </p>
           </div>
 
@@ -97,12 +99,18 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
               <h3 className="mb-2">Expertise</h3>
               <p className="text-gray-300">
-                Plus de 10 ans d'expérience dans le domaine du carrelage et du béton imprimé.
+                Plus de 10 ans d'expérience dans le domaine du carrelage et du
+                béton imprimé.
               </p>
             </div>
             <div className="text-center p-6 bg-cs-dark rounded-lg border border-gray-800 transform transition-all duration-300 hover:border-cs-orange/50 md:translate-y-4">
@@ -124,7 +132,8 @@ export default function Home() {
               </div>
               <h3 className="mb-2">Ponctualité</h3>
               <p className="text-gray-300">
-                Respect des délais et des engagements pour une tranquillité d'esprit totale.
+                Respect des délais et des engagements pour une tranquillité
+                d'esprit totale.
               </p>
             </div>
             <div className="text-center p-6 bg-cs-dark rounded-lg border border-gray-800 transform transition-all duration-300 hover:border-cs-orange/50">
@@ -136,12 +145,18 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
               </div>
               <h3 className="mb-2">Qualité</h3>
               <p className="text-gray-300">
-                Matériaux premium et finitions soignées pour des résultats qui durent dans le temps.
+                Matériaux premium et finitions soignées pour des résultats qui
+                durent dans le temps.
               </p>
             </div>
           </div>
@@ -208,7 +223,9 @@ export default function Home() {
             <div className="w-12 h-1 bg-white/30"></div>
           </div>
 
-          <h2 className="text-white mb-6 text-3xl md:text-4xl">Prêt à concrétiser votre projet ?</h2>
+          <h2 className="text-white mb-6 text-3xl md:text-4xl">
+            Prêt à concrétiser votre projet ?
+          </h2>
 
           <div className="flex items-center justify-center mt-6">
             <div className="w-12 h-1 bg-white/30"></div>
@@ -227,5 +244,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
