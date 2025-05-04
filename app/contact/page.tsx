@@ -36,7 +36,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Téléphone</h3>
-                    <p className="text-gray-300">{INFO.PHONE}</p>
+                    <p className="text-gray-300 m-0">{INFO.PHONE}</p>
                     <p className="text-sm text-gray-400">
                       {INFO.OPENING_HOURS}
                     </p>
@@ -67,7 +67,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Adresse</h3>
-                    <p className="text-gray-300">
+                    <p className="text-gray-300 m-0">
                       {INFO.ADDRESS}, {INFO.POSTAL_CODE}
                     </p>
                     <p className="text-sm text-gray-400 mt-1">
