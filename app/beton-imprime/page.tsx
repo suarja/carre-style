@@ -400,7 +400,7 @@ export default function BetonImprime() {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <Accordion items={accordionItems} />
+            <Accordion items={accordionItems}  />
           </div>
         </div>
       </section>

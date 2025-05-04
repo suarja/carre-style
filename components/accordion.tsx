@@ -45,7 +45,7 @@ export default function Accordion({ items }: AccordionProps) {
   }
 
   return (
-    <div className="border border-gray-700 rounded-lg bg-cs-dark-lighter">
+    <div className="border border-gray-700 rounded-lg bg-cs-dark-lighter px-4 py-2">
       {items.map((item, index) => (
         <AccordionItem key={index} title={item.title} isOpen={openIndex === index} toggleOpen={() => toggleItem(index)}>
           {item.content}
