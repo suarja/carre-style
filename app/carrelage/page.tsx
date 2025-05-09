@@ -430,7 +430,10 @@ export default function Carrelage() {
         </div>
       </section>
 
-      <DemanderDevisSection />
+      <DemanderDevisSection
+        title="  Prêt à transformer votre espace extérieur ?"
+        btnText="Demander un devis"
+      />
     </>
   );
 }

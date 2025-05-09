@@ -8,7 +8,6 @@ import BeforeAfter from "@/components/before-after";
 import ProjectShowcase from "@/components/project-showcase";
 import DemanderDevisSection from "@/components/demander-devis-section";
 
-
 export const metadata: Metadata = {
   title: "Béton Imprimé | Carré Style - Haut-Rhin Alsace",
   description:
@@ -400,12 +399,15 @@ export default function BetonImprime() {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <Accordion items={accordionItems}  />
+            <Accordion items={accordionItems} />
           </div>
         </div>
       </section>
 
-    <DemanderDevisSection />
+      <DemanderDevisSection
+        title="Prêt à transformer vos espaces extérieurs ?"
+        btnText="Demander un devis gratuit"
+      />
     </>
   );
 }

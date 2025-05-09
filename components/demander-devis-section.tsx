@@ -2,7 +2,12 @@ import React from "react";
 import { Square } from "lucide-react";
 import Link from "next/link";
 
-function DemanderDevisSection() {
+type DemanderDevisSectionProps = {
+  title: string;
+  btnText: string;
+};
+
+function DemanderDevisSection(props: DemanderDevisSectionProps) {
   return (
     <section className="relative py-24 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-cs-orange to-cs-orange-dark"></div>
@@ -23,9 +28,7 @@ function DemanderDevisSection() {
           <div className="w-12 h-1 bg-white/30"></div>
         </div>
 
-        <h2 className="text-white mb-6 text-3xl md:text-4xl">
-          Prêt à transformer votre espace extérieur ?
-        </h2>
+        <h2 className="text-white mb-6 text-3xl md:text-4xl">{props.title}</h2>
 
         <div className="flex items-center justify-center mt-6">
           <div className="w-12 h-1 bg-white/30"></div>
@@ -38,7 +41,7 @@ function DemanderDevisSection() {
             href="/contact#devis"
             className="btn bg-white p-3 text-cs-orange hover:bg-gray-100 hover:shadow-lg transition-all duration-300 shadow-md"
           >
-            Demander un devis gratuit
+            {props.btnText}
           </Link>
         </div>
       </div>
