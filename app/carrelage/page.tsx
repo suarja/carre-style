@@ -196,15 +196,16 @@ export default function Carrelage() {
               </div>
               <p className="mb-4 text-gray-300">
                 Chez Carré Style, nous sommes spécialisés dans la pose de
-                carrelage pour tous vos espaces intérieurs neuf ou rénovation. Que ce soit pour
-                votre salle de bain ou vos pièces à vivre, nous
-                vous garantissons un travail soigné et des finitions
-                impeccables reconnues par plusieurs fournisseurs de carrelage.
+                carrelage pour tous vos espaces intérieurs neuf ou rénovation.
+                Que ce soit pour votre salle de bain ou vos pièces à vivre, nous
+                vous garantissons un travail soigné et des finitions impeccables
+                reconnues par plusieurs fournisseurs de carrelage.
               </p>
               <p className="mb-4 text-gray-300">
                 Notre équipe d'artisans qualifiés maîtrise toutes les techniques
-                de pose, des plus classiques aux plus complexes, du plus petit format aux carraux XXL, pour donner vie
-                à vos projets avec précision et esthétisme.
+                de pose, des plus classiques aux plus complexes, du plus petit
+                format aux carraux XXL, pour donner vie à vos projets avec
+                précision et esthétisme.
               </p>
               <p className="text-gray-300">
                 Nous vous accompagnons dans le choix des matériaux et des
@@ -271,13 +272,14 @@ export default function Carrelage() {
           <div className="mt-12">
             <ProjectShowcase
               images={[
+
                 {
-                  src: "/images/carrelage-mur-xxl.png",
-                  alt: "Mur avec carrelage grand format",
+                  src: "/images/carrelage-piscine-exterieur.jpeg",
+                  alt: "Carrelage de piscine",
                 },
                 {
-                  src: "/images/carrelage-wc-design.png",
-                  alt: "WC suspendus avec carrelage gris foncé",
+                  src: "/images/carrelage-exterieur-maison.jpeg",
+                  alt: "Carrelage sur mur de maison",
                 },
               ]}
               title="Nos réalisations spéciales"
