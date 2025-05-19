@@ -51,7 +51,7 @@ export default function Home() {
             <div className="transform hover:-translate-y-1 transition-transform duration-300">
               <ServiceCard
                 title="Béton Imprimé"
-                description="Transformez vos espaces extérieurs avec notre béton imprimé durable et esthétique. Idéal pour les terrasses, allées et sols extérieurs."
+                description="Transformez vos espaces extérieurs avec notre béton décoratif. Idéal pour les terrasses, contours de piscine et sols extérieurs, avec un large choix de motifs et de couleurs pour personnaliser vos projets exterieurs."
                 imagePath="/images/beton-imprime-piscine.png"
                 link="/beton-imprime"
               />
@@ -59,7 +59,7 @@ export default function Home() {
             <div className="transform hover:-translate-y-1 transition-transform duration-300">
               <ServiceCard
                 title="Carrelage"
-                description="Donnez du caractère à vos espaces intérieurs avec notre service de pose de carrelage professionnel pour salles de bain, cuisines et sols."
+                description="Donnez du caractère à vos espaces intérieurs avec notre service de pose de carrelage neuf ou en rénovation pour salles de bain, cuisines et sols."
                 imagePath="/images/carrelage-sdb-moderne.png"
                 link="/carrelage"
               />
@@ -110,7 +110,7 @@ export default function Home() {
               </div>
               <h3 className="mb-2">Expertise</h3>
               <p className="text-gray-300">
-                Plus de 10 ans d'expérience dans le domaine du carrelage et du
+                Plus de 15 ans d'expérience dans le domaine du carrelage et du
                 béton imprimé.
               </p>
             </div>

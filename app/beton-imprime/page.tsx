@@ -189,9 +189,9 @@ export default function BetonImprime() {
                 résistance du béton.
               </p>
               <p className="mb-4 text-gray-300">
-                Cette solution est idéale pour les terrasses, allées, plages de
-                piscine et autres surfaces extérieures, combinant esthétique et
-                fonctionnalité à un coût maîtrisé.
+                Cette solution est idéale pour les cours, entrées de garagage,
+                terrasses, , plages de piscine et autres surfaces extérieures,
+                combinant esthétique et fonctionnalité à un coût maîtrisé.
               </p>
               <p className="text-gray-300">
                 Chez Carré Style, nous sommes spécialisés dans la création de
@@ -211,75 +211,6 @@ export default function BetonImprime() {
           </div>
         </div>
       </section>
-
-      {/* Nouvelle section Avant/Après */}
-      <section className="section bg-cs-dark-lighter relative overflow-hidden">
-        {/* Motif géométrique subtil */}
-        <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <div className="grid grid-cols-10 h-full">
-            {[...Array(20)].map((_, i) => (
-              <div key={i} className="border-r border-t border-white/10"></div>
-            ))}
-          </div>
-        </div>
-
-        <div className="container-custom relative z-10">
-          <div className="text-center mb-12">
-            <div className="inline-block relative">
-              <h2 className="mb-4">Du projet à la réalisation</h2>
-              <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
-            </div>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Découvrez la transformation de vos espaces extérieurs grâce au
-              béton imprimé.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <BeforeAfter
-              beforeImage="/images/beton-imprime-chantier.png"
-              beforeAlt="Chantier de béton imprimé en préparation"
-              afterImage="/images/beton-imprime-terrasse-ocre.png"
-              afterAlt="Terrasse en béton imprimé finalisée"
-              title="Transformation complète d'une terrasse"
-              description="De la préparation du terrain à la finition, découvrez comment nous transformons un espace brut en une élégante terrasse en béton imprimé motif pierre naturelle."
-            />
-
-            <ProjectShowcase
-              images={[
-                {
-                  src: "/images/beton-imprime-piscine.png",
-                  alt: "Contour de piscine en béton imprimé",
-                },
-                {
-                  src: "/images/beton-imprime-terrasse-grise.png",
-                  alt: "Terrasse en béton imprimé gris",
-                },
-              ]}
-              title="Nos réalisations récentes"
-              description="Contours de piscine, terrasses et allées - nous adaptons le béton imprimé à tous vos espaces extérieurs avec différentes finitions et coloris."
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="section bg-cs-dark-lighter">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <div className="inline-block relative">
-              <h2 className="mb-4">Nos réalisations en béton imprimé</h2>
-              <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
-            </div>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
-              Découvrez quelques exemples de nos projets récents qui illustrent
-              notre savoir-faire.
-            </p>
-          </div>
-
-          <Gallery images={galleryImages} />
-        </div>
-      </section>
-
       <section className="section bg-cs-dark relative overflow-hidden">
         {/* Élément décoratif */}
         <div className="absolute bottom-0 left-0 w-1/3 h-1 bg-gradient-to-r from-cs-orange to-transparent"></div>
@@ -366,6 +297,73 @@ export default function BetonImprime() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      {/* Nouvelle section Avant/Après */}
+      <section className="section bg-cs-dark-lighter relative overflow-hidden">
+        {/* Motif géométrique subtil */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="grid grid-cols-10 h-full">
+            {[...Array(20)].map((_, i) => (
+              <div key={i} className="border-r border-t border-white/10"></div>
+            ))}
+          </div>
+        </div>
+
+        <div className="container-custom relative z-10">
+          <div className="text-center mb-12">
+            <div className="inline-block relative">
+              <h2 className="mb-4">Du projet à la réalisation</h2>
+              <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
+            </div>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
+              Découvrez la transformation de vos espaces extérieurs grâce au
+              béton imprimé.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <BeforeAfter
+              beforeImage="/images/beton-imprime-chantier.png"
+              beforeAlt="Chantier de béton imprimé en préparation"
+              afterImage="/images/beton-imprime-terrasse-ocre.png"
+              afterAlt="Terrasse en béton imprimé finalisée"
+              title="Transformation complète d'une terrasse"
+              description="De la préparation du terrain à la finition, découvrez comment nous transformons un espace brut en une élégante terrasse en béton imprimé motif pierre naturelle."
+            />
+
+            <ProjectShowcase
+              images={[
+                {
+                  src: "/images/beton-imprime-piscine.png",
+                  alt: "Contour de piscine en béton imprimé",
+                },
+                {
+                  src: "/images/beton-imprime-terrasse-grise.png",
+                  alt: "Terrasse en béton imprimé gris",
+                },
+              ]}
+              title="Nos réalisations récentes"
+              description="Contours de piscine, terrasses et allées - nous adaptons le béton imprimé à tous vos espaces extérieurs avec différentes finitions et coloris."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-cs-dark-lighter">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <div className="inline-block relative">
+              <h2 className="mb-4">Nos réalisations en béton imprimé</h2>
+              <div className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-cs-orange/40"></div>
+            </div>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
+              Découvrez quelques exemples de nos projets récents qui illustrent
+              notre savoir-faire.
+            </p>
+          </div>
+
+          <Gallery images={galleryImages} />
         </div>
       </section>
 

@@ -196,14 +196,14 @@ export default function Carrelage() {
               </div>
               <p className="mb-4 text-gray-300">
                 Chez Carré Style, nous sommes spécialisés dans la pose de
-                carrelage pour tous vos espaces intérieurs. Que ce soit pour
-                votre salle de bain, votre cuisine ou vos pièces à vivre, nous
+                carrelage pour tous vos espaces intérieurs neuf ou rénovation. Que ce soit pour
+                votre salle de bain ou vos pièces à vivre, nous
                 vous garantissons un travail soigné et des finitions
-                impeccables.
+                impeccables reconnues par plusieurs fournisseurs de carrelage.
               </p>
               <p className="mb-4 text-gray-300">
                 Notre équipe d'artisans qualifiés maîtrise toutes les techniques
-                de pose, des plus classiques aux plus complexes, pour donner vie
+                de pose, des plus classiques aux plus complexes, du plus petit format aux carraux XXL, pour donner vie
                 à vos projets avec précision et esthétisme.
               </p>
               <p className="text-gray-300">
