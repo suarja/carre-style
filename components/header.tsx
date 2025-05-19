@@ -69,7 +69,7 @@ export default function Header() {
         </nav>
 
         <Link
-          href="/devis"
+          href="/contact"
           className={`hidden md:flex btn btn-primary items-center transition-all duration-300 ${
             isScrolled ? "shadow-md" : "shadow-lg shadow-cs-orange/20"
           }`}
@@ -116,7 +116,7 @@ export default function Header() {
               Contact
             </MobileNavLink>
             <Link
-              href="/devis"
+              href="/contact"
               className="btn btn-primary w-full text-center mt-2 flex items-center justify-center"
               onClick={() => setIsMenuOpen(false)}
             >
