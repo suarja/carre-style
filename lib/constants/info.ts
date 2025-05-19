@@ -1,6 +1,6 @@
 const EMAIL = "info@carrestyle.fr";
 const PHONE = "+33 6 61 02 48 14";
-const ADDRESS = "Haut-Rhin, Alsace";
+const ADDRESS = "Cernay - Haut-Rhin, Alsace";
 const POSTAL_CODE = "68700";
 const INSTAGRAM = "@carrestyle_carrelage";
 const OPENING_HOURS = "Du lundi au vendredi, 8h-19h";

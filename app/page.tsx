@@ -127,14 +127,14 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
               </div>
-              <h3 className="mb-2">Ponctualité</h3>
+              <h3 className="mb-2">Passion</h3>
               <p className="text-gray-300">
-                Respect des délais et des engagements pour une tranquillité
-                d'esprit totale.
+                Plus qu'un métier, une passion... Chaque projet est réalisé avec
+                cœur et dévouement pour votre satisfaction.
               </p>
             </div>
             <div className="text-center p-6 bg-cs-dark rounded-lg border border-gray-800 transform transition-all duration-300 hover:border-cs-orange/50">
@@ -182,23 +182,23 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="transform transition-all duration-300 hover:-translate-y-1">
               <Testimonial
-                quote="Travail impeccable pour notre terrasse en béton imprimé. Le résultat est magnifique et durable."
+                quote="Travail impeccable pour notre terrasse en béton imprimé. Équipe très professionnelle et à l'écoute."
                 author="Marie L."
-                location="Mulhouse"
+                location="Soultz"
               />
             </div>
             <div className="transform transition-all duration-300 hover:-translate-y-1 md:translate-y-4">
               <Testimonial
                 quote="Très satisfait de la rénovation de notre salle de bain. Professionnalisme et qualité au rendez-vous."
                 author="Thomas D."
-                location="Colmar"
+                location="Goldbach"
               />
             </div>
             <div className="transform transition-all duration-300 hover:-translate-y-1">
               <Testimonial
                 quote="Équipe à l'écoute et travail soigné. Je recommande vivement pour tous vos projets."
                 author="Sophie M."
-                location="Strasbourg"
+                location="Colmar"
               />
             </div>
           </div>
