@@ -2,10 +2,13 @@
 
 import type React from "react";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Send } from "lucide-react";
-const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL || "";
+import emailjs from "@emailjs/browser";
+import { ENVIRONNEMENT_VARIABLES } from "@/lib/constants/info";
+
 export default function ContactForm() {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,45 +34,40 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitError("");
+    setSubmitSuccess(false);
 
     try {
-      const response = await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          date: new Date().toISOString(),
-        }),
-      });
-      if (!response.ok) {
-        throw new Error("Erreur lors de l'envoi du formulaire");
-      }
-      const data = await response.json();
-      if (data.error) {
-        throw new Error(data.error);
-      }
+      const result = await emailjs.sendForm(
+        ENVIRONNEMENT_VARIABLES.EMAILJS_SERVICE_ID!,
+        ENVIRONNEMENT_VARIABLES.EMAILJS_TEMPLATE_ID!,
+        form.current as HTMLFormElement,
+        ENVIRONNEMENT_VARIABLES.EMAILJS_PUBLIC_KEY
+      );
 
-      console.log("Formulaire envoyé avec succès");
-
-      setSubmitSuccess(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
+      if (result.text === "OK") {
+        setSubmitSuccess(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Erreur lors de l'envoi du message");
+      }
     } catch (error) {
-      setSubmitError("Une erreur est survenue. Veuillez réessayer.");
+      console.error("Erreur d'envoi:", error);
+      setSubmitError(
+        "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer."
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form ref={form} onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label
